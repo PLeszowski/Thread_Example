@@ -37,7 +37,7 @@ public class SumThread extends Thread {
 		SumThread[] ts = new SumThread[4];
 		for (int i = 0; i < 4; i++) {
 			ts[i] = new SumThread(arr, (i * len) / 4, ((i + 1) * len / 4));
-			ts[i].start(); // starts run() for each thread
+			ts[i].start(); // starts run() for each thread (run() is like main for the thread)
 		}
 
 		// Wait for the threads to finish and sum their results.
